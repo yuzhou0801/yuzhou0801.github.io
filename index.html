@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yu Zhou is a PhD student in Computer Science at Heriot-Watt University, researching natural language processing, robot safety, and multi-agent systems.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Yu Zhou — Academic Profile</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./theme.js"></script>
+    <script src="./data.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#about" aria-label="Yu Zhou, home"><span class="brand-name">Yu Zhou</span><span class="brand-dot" aria-hidden="true">.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#about" aria-current="location">About</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#news">News</a>
+          <a class="nav-link" href="#publications">Publications</a>
+        </nav>
+        <button class="theme-toggle icon-button" type="button" aria-label="Switch to dark theme" title="Switch to dark theme"></button>
+      </div>
+    </header>
+
+    <div class="page-shell">
+      <aside class="profile-aside" aria-label="Profile photo and contact information">
+        <div id="portrait" class="portrait-placeholder">
+          <span class="photo-corner top-left" aria-hidden="true"></span>
+          <span class="photo-corner bottom-right" aria-hidden="true"></span>
+          <span class="portrait-monogram" aria-hidden="true">YZ</span>
+          <span class="portrait-label">Yu Zhou</span>
+        </div>
+        <div id="sidebar-details" class="sidebar-details"></div>
+        <div id="social-links" class="social-links" aria-label="Contact and academic profiles"></div>
+        <span id="template-badge" class="template-badge"><span aria-hidden="true"></span> Template preview</span>
+      </aside>
+      <main id="main" class="main-content">
+      <section id="about" class="about-section" aria-labelledby="profile-name">
+        <div class="profile-copy">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> Academic profile</p>
+          <h1 id="profile-name">Yu Zhou</h1>
+          <p id="profile-role" class="profile-role"></p>
+          <div id="biography" class="biography"></div>
+          <div class="interests-block">
+            <h2 class="label-heading">Research interests</h2>
+            <ul id="interests" class="interest-list" aria-label="Research interests"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="content-section" aria-labelledby="education-title">
+        <div class="section-heading"><h2 id="education-title"><span class="emoji-icon section-emoji" aria-hidden="true">🎓</span>Education</h2><span class="section-index" aria-hidden="true">01</span></div>
+        <div id="education-list" class="education-list"></div>
+      </section>
+
+      <section id="news" class="content-section" aria-labelledby="news-title">
+        <div class="section-heading"><h2 id="news-title"><span class="emoji-icon section-emoji" aria-hidden="true">📰</span>News</h2><span class="section-index" aria-hidden="true">02</span></div>
+        <div id="news-list" class="news-list"></div>
+      </section>
+
+      <section id="publications" class="content-section publications-section" aria-labelledby="publications-title">
+        <div class="section-heading"><h2 id="publications-title"><span class="emoji-icon section-emoji" aria-hidden="true">📖</span>Publications</h2><span class="section-index" aria-hidden="true">03</span></div>
+        <div class="publication-toolbar">
+          <div class="publication-filters" role="group" aria-label="Filter publications">
+            <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All <span id="publication-count"></span></button>
+            <button type="button" class="filter-button" data-filter="conference" aria-pressed="false">Conference</button>
+            <button type="button" class="filter-button" data-filter="journal" aria-pressed="false">Journal</button>
+            <button type="button" class="filter-button" data-filter="preprint" aria-pressed="false">Preprint</button>
+          </div>
+          <span class="publication-note">* Equal contribution</span>
+        </div>
+        <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+        <div id="publication-list"></div>
+      </section>
+
+      <noscript><p class="notice">Please enable JavaScript to view this profile’s biography, education, news, and publications.</p></noscript>
+      <footer class="site-footer">
+        <div><p id="copyright"></p><p id="template-note" class="footer-note">A personal academic homepage · Placeholder content for preview.</p></div>
+        <a class="back-to-top" href="#about">Back to top <span aria-hidden="true">↑</span></a>
+      </footer>
+      </main>
+    </div>
+
+    <dialog id="content-dialog" class="content-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-heading"><h2 id="dialog-title"></h2><button id="dialog-close" class="icon-button" type="button" aria-label="Close dialog">×</button></div>
+      <div id="dialog-body"></div>
+      <button id="copy-citation" class="outline-button" type="button" hidden>Copy BibTeX</button>
+      <p id="copy-status" class="copy-status" role="status"></p>
+    </dialog>
+  </body>
+</html>

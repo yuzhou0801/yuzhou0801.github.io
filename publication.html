@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Research publications and citation information by Yu Zhou, Heriot-Watt University.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Publication — Academic Profile</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./theme.js"></script>
+    <script src="./data.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#publication-detail">Skip to content</a>
+    <header class="site-header"><div class="header-inner">
+      <a class="wordmark" href="./index.html" aria-label="Yu Zhou, home"><span class="brand-name">Yu Zhou</span><span class="brand-dot" aria-hidden="true">.</span></a>
+      <button class="theme-toggle icon-button" type="button" aria-label="Switch to dark theme"></button>
+    </div></header>
+    <main class="detail-shell">
+      <a class="detail-back" href="./index.html#publications">← Back to publications</a>
+      <article id="publication-detail"></article>
+      <noscript><p class="notice">Please enable JavaScript to view the publication details.</p></noscript>
+    </main>
+    <dialog id="content-dialog" class="content-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-heading"><h2 id="dialog-title"></h2><button id="dialog-close" class="icon-button" type="button" aria-label="Close dialog">×</button></div>
+      <div id="dialog-body"></div>
+      <button id="copy-citation" class="outline-button" type="button" hidden>Copy BibTeX</button>
+      <p id="copy-status" class="copy-status" role="status"></p>
+    </dialog>
+  </body>
+</html>
